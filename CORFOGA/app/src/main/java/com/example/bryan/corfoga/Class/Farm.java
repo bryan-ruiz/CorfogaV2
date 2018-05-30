@@ -33,6 +33,16 @@ public class Farm {
         this.visitNumber = 1;
     }
 
+    public Farm(Farm f) {
+        this.asocebuID = f.getAsocebuID();
+        this.userID = f.getUserID();
+        this.name = f.getName();
+        this.state = f.getState();
+        this.created_at = f.getCreated_at();
+        this.updated_at = f.getUpdated_at();
+        this.animalsList = new ArrayList<Animal>();
+    }
+
     public int getVisitNumber() {
         return visitNumber;
     }
